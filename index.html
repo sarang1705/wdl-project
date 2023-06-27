@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>99acres</title>
+  <link rel="stylesheet" href="acres.css">
+</head>
+<style>
+{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.topnav form input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hero {
+  background-image: url(00.jpeg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #130202;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero form input[type="text"] {
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+}
+
+.hero form button {
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #f77f00;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.featured {
+  margin-top: 50px;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.property {
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.property img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.property h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.property p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.trending {
+  margin-top: 50px;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.locations {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.location h3 {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.social-links a i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .topnav {
+    flex-wrap: wrap;
+  }
+  
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+<body>
+  <header class="topnav">
+    <a href="#">Buy</a>
+    <a href="#">Rent</a>
+    <a href="#">Shortlist</a>
+    <a href="#">List Property</a>
+    <a href="#">Projects</a>
+    <a href="#">Agents</a>
+    <a href="#">More</a>
+    <form action="#">
+      <input type="text" placeholder="Search">
+    </form>
+  </header>
+  
+  <div class="main">
+    <div class="hero">
+      <h1>Find your dream home with 99acres</h1>
+      <form action="#">
+        <input type="text" placeholder="Search for a property">
+        <button>Search</button>
+      </form>
+    </div>
+    
+    <div class="featured">
+      <h2>Featured Properties</h2>
+      <div class="property">
+        <img src=01.jpeg" alt="Property Image">
+        <h3>2 BHK Apartment in Bangalore</h3>
+        <p>Starting from Rs. 50 lakhs</p>
+      </div>
+      <div class="property">
+        <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2022/06/05152053/1-bhk-interior-design-cost.jpg" alt="Property Image">
+        <h3>3 BHK Villa in Mumbai</h3>
+        <p>Starting from Rs. 2 crores</p>
+      </div>
+      <div class="property">
+        <img src="https://content.jdmagicbox.com/comp/rajkot/y5/0281px281.x281.230205210840.s1y5/catalogue/savan-bhalara-interior-designer-rajkot-city-rajkot-interior-designers-hydm9n3u9q.jpg" alt="Property Image">
+        <h3>1 BHK Apartment in Delhi</h3>
+        <p>Starting from Rs. 20 lakhs</p>
+      </div>
+    </div>
+    
+    <div class="trending">
+      <h2>Trending Locations</h2>
+        
+        
+        <div class="location">
+          <img src="01.jpeg" alt="Location Image"><br>
+          <h3>Delhi</h3><br>
+        </div>
+        <div class="location">
+          <img src="02.jpeg" alt="Location Image"><br>
+          <h3>Chennai</h3><br>
+        </div>
+        <div class="location">
+          <img src="03.jpeg" alt="Location Image"><br>
+          <h3>Pune</h3><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <ul class="footer-nav">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+    <div class="social-links">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2021 99acres. All rights reserved.</p>
+  </footer>
+</body>
+</html>
